@@ -28,6 +28,7 @@ def show_pdf(file_path):
 
 
 if st.button('get reference genome'):
+    st.write(os.path.dirname(SigProfilerMatrixGenerator.__file__))
     st.write(sys.path)
     genInstall.install('GRCh37')
 
