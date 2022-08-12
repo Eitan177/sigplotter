@@ -33,7 +33,7 @@ def show_pdf(file_path):
 if st.button('get reference genome'):
     st.write(os.path.dirname(SigProfilerMatrixGenerator.__file__))
     dirtest=os.path.dirname(SigProfilerMatrixGenerator.__file__)
-    st.write(sys.path)
+    #st.write(sys.path)
     urllib.request.urlretrieve('https://dl.dropboxusercontent.com/s/et97ewsct862x7m/references.zip?dl=0','references.zip')
     with zipfile.ZipFile('references.zip', 'r') as zip_ref:
         zip_ref.extractall('/home/appuser/venv/lib/python3.9/site-packages/SigProfilerMatrixGenerator')
