@@ -28,7 +28,7 @@ def show_pdf(file_path):
 
 
 if st.button('get reference genome'):
-    os.sys('sudo apt-get install wget')
+    os.system('sudo apt-get install wget')
     genInstall.install('GRCh37')
 
 if not os.path.exists('input'):
