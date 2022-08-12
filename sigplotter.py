@@ -1,5 +1,6 @@
 import streamlit as st
 import zipfile
+import urllib.requests
 import glob
 import SigProfilerMatrixGenerator
 from SigProfilerMatrixGenerator import install as genInstall
