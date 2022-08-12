@@ -1,5 +1,6 @@
 import streamlit as st
 import glob
+import SigProfilerMatrixGenerator
 from SigProfilerMatrixGenerator import install as genInstall
 import shutil
 import os
