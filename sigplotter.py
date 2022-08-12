@@ -35,9 +35,9 @@ if st.button('get reference genome'):
     dirtest=os.path.dirname(SigProfilerMatrixGenerator.__file__)
     st.write(sys.path)
     urllib.request.urlretrieve('https://dl.dropboxusercontent.com/s/et97ewsct862x7m/references.zip?dl=0','references.zip')
-    with zipfile.ZipFile(path_to_zip_file, 'r') as zip_ref:
-        zip_ref.extractall(dirtest)
-    genInstall.install('GRCh37')
+    with zipfile.ZipFile('references.zip, 'r') as zip_ref:
+        zip_ref.extractall('/home/appuser/venv/lib/python3.9/site-packages/SigProfilerMatrixGenerator')
+    ##genInstall.install('GRCh37')
 
 if not os.path.exists('input'):
     os.mkdir('input')
